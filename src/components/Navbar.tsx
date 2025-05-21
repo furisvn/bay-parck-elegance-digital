@@ -79,10 +79,10 @@ const Navbar = ({ isScrolled }: NavbarProps) => {
             </Link>
           </nav>
           
-          {/* Mobile Menu Toggle */}
+          {/* Mobile Menu Toggle - Improved visibility and positioning */}
           <button
             onClick={() => setIsMenuOpen(!isMenuOpen)}
-            className="lg:hidden relative z-10"
+            className="lg:hidden relative z-10 p-2 rounded-md hover:bg-white/10"
             aria-label="Toggle menu"
           >
             {isMenuOpen ? (
@@ -94,16 +94,24 @@ const Navbar = ({ isScrolled }: NavbarProps) => {
         </div>
       </div>
       
-      {/* Mobile Navigation */}
+      {/* Mobile Navigation - Enhanced with better transitions and styling */}
       {isMenuOpen && (
-        <div className="fixed inset-0 bg-white z-40 lg:hidden animate-fade-in">
+        <div 
+          className="fixed inset-0 bg-white z-40 lg:hidden animate-fade-in"
+          onClick={(e) => {
+            // Close menu when clicking the backdrop (but not menu items)
+            if (e.target === e.currentTarget) {
+              setIsMenuOpen(false);
+            }
+          }}
+        >
           <div className="container-luxe py-28">
             <nav className="flex flex-col space-y-8">
               {navLinks.map((link) => (
                 <Link
                   key={link.path}
                   to={link.path}
-                  className={`text-xl uppercase tracking-widest font-light transition-colors duration-200 ${
+                  className={`text-xl uppercase tracking-widest font-light transition-colors duration-200 py-2 ${
                     location.pathname === link.path
                       ? 'text-coastal-blue'
                       : 'text-foreground hover:text-coastal-blue'
