@@ -1,4 +1,3 @@
-
 import Layout from '../components/Layout';
 import HeroSection from '../components/HeroSection';
 import SectionTitle from '../components/SectionTitle';
@@ -6,8 +5,38 @@ import ContentBlock from '../components/ContentBlock';
 import FeatureCard from '../components/FeatureCard';
 import { CheckCircle, MapPin, Palmtree, Shield, Landmark, PenLine } from 'lucide-react';
 import { Link } from 'react-router-dom';
+import { useState, useEffect, useRef } from 'react';
 
 const Index = () => {
+  const [isInvestmentSectionVisible, setIsInvestmentSectionVisible] = useState(false);
+  const investmentSectionRef = useRef<HTMLDivElement>(null);
+  
+  useEffect(() => {
+    const observer = new IntersectionObserver(
+      ([entry]) => {
+        if (entry.isIntersecting) {
+          setIsInvestmentSectionVisible(true);
+          observer.unobserve(entry.target);
+        }
+      },
+      {
+        root: null,
+        rootMargin: '0px',
+        threshold: 0.1,
+      }
+    );
+
+    if (investmentSectionRef.current) {
+      observer.observe(investmentSectionRef.current);
+    }
+
+    return () => {
+      if (investmentSectionRef.current) {
+        observer.unobserve(investmentSectionRef.current);
+      }
+    };
+  }, []);
+
   return (
     <Layout>
       {/* Hero Section */}
@@ -79,7 +108,7 @@ const Index = () => {
       </section>
 
       {/* Investment Highlights */}
-      <section className="section-padding bg-coastal-navy text-white">
+      <section ref={investmentSectionRef} className="section-padding bg-coastal-navy text-white">
         <div className="container-luxe">
           <SectionTitle
             pretitle="Investment Value"
@@ -114,7 +143,7 @@ const Index = () => {
                 description: "Complimentary resort membership with stays at Bay Parck and partner properties."
               }
             ].map((item, index) => (
-              <div key={index} className={`p-6 border-b border-white/20 ${isVisible ? 'animate-fade-in' : 'opacity-0'}`} style={{ animationDelay: `${index * 100}ms` }}>
+              <div key={index} className={`p-6 border-b border-white/20 ${isInvestmentSectionVisible ? 'animate-fade-in' : 'opacity-0'}`} style={{ animationDelay: `${index * 100}ms` }}>
                 <div className="flex items-start gap-4">
                   <CheckCircle className="w-6 h-6 mt-1 text-coastal-ivory/80" />
                   <div>
