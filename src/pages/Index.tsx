@@ -98,8 +98,8 @@ const Index = () => {
             <ContentBlock
               title="Luxury Resort Experience"
               content="Our boutique resort offers modern, rustic, and Amalfi-themed accommodations, each designed to provide a unique stay experience. Enjoy world-class amenities including a swimming pool, restaurant, spa, gym, and recreational facilities. Plot owners receive exclusive resort membership valid until December 2028, with complimentary stays and significant discounts."
-              image="https://images.unsplash.com/photo-1566073771259-6a8506099945?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=2070&q=80"
-              imageAlt="Luxury Resort Experience"
+              image="/lovable-uploads/38be0453-ce54-48b4-b749-eba71ebe43d0.png"
+              imageAlt="SVN Bay Parck Luxury Resort Experience"
               reverse={true}
               ctaText="Discover Our Resort"
               ctaLink="/resort"
