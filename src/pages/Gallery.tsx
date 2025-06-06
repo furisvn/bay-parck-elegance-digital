@@ -41,36 +41,36 @@ const Gallery = () => {
         category: "resort"
       },
     ],
-    realEstate: [
+    villasPlots: [
       {
         src: "https://images.unsplash.com/photo-1600585154340-be6161a56a0c?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=2070&q=80",
         alt: "Luxury Villa Exterior",
-        category: "realEstate"
+        category: "villasPlots"
       },
       {
         src: "https://images.unsplash.com/photo-1600607686527-6fb886090705?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=2070&q=80",
         alt: "Villa Garden",
-        category: "realEstate"
+        category: "villasPlots"
       },
       {
         src: "https://images.unsplash.com/photo-1512917774080-9991f1c4c750?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=2070&q=80",
         alt: "Villa Exterior",
-        category: "realEstate"
+        category: "villasPlots"
       },
       {
         src: "https://images.unsplash.com/photo-1613977257363-707ba9348227?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=2070&q=80",
         alt: "Villa Living Room",
-        category: "realEstate"
+        category: "villasPlots"
       },
       {
         src: "https://images.unsplash.com/photo-1599427303058-f04cbcf4756f?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=2071&q=80",
         alt: "Villa Bedroom",
-        category: "realEstate"
+        category: "villasPlots"
       },
       {
         src: "https://images.unsplash.com/photo-1600607687920-4e2a09cf159d?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=2070&q=80",
         alt: "Villa Dining",
-        category: "realEstate"
+        category: "villasPlots"
       },
     ],
     landscape: [
@@ -105,9 +105,85 @@ const Gallery = () => {
         category: "landscape"
       },
     ],
+    multiPurposeHall: [
+      {
+        src: "https://images.unsplash.com/photo-1587825140708-dfaf72ae4b04?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=2070&q=80",
+        alt: "Multi Purpose Hall Main Area",
+        category: "multiPurposeHall"
+      },
+      {
+        src: "https://images.unsplash.com/photo-1511578314322-379afb476865?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=2069&q=80",
+        alt: "Hall Event Setup",
+        category: "multiPurposeHall"
+      },
+      {
+        src: "https://images.unsplash.com/photo-1464366400600-7168b8af9bc3?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=2069&q=80",
+        alt: "Hall Interior Design",
+        category: "multiPurposeHall"
+      },
+      {
+        src: "https://images.unsplash.com/photo-1542744173-8e7e53415bb0?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=2070&q=80",
+        alt: "Hall Stage Area",
+        category: "multiPurposeHall"
+      },
+    ],
+    amenities: [
+      {
+        src: "https://images.unsplash.com/photo-1571019613454-1cb2f99b2d8b?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=2070&q=80",
+        alt: "Fitness Center",
+        category: "amenities"
+      },
+      {
+        src: "https://images.unsplash.com/photo-1544966503-7cc5ac882d5f?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=2070&q=80",
+        alt: "Spa and Wellness",
+        category: "amenities"
+      },
+      {
+        src: "https://images.unsplash.com/photo-1555448248-2571daf6344b?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=2070&q=80",
+        alt: "Swimming Pool Area",
+        category: "amenities"
+      },
+      {
+        src: "https://images.unsplash.com/photo-1567013127542-490d757e51fc?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=2070&q=80",
+        alt: "Recreational Facilities",
+        category: "amenities"
+      },
+      {
+        src: "https://images.unsplash.com/photo-1606919820299-e3b00b0dcecc?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=2070&q=80",
+        alt: "Kids Play Area",
+        category: "amenities"
+      },
+    ],
+    events: [
+      {
+        src: "https://images.unsplash.com/photo-1511578314322-379afb476865?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=2069&q=80",
+        alt: "Wedding Event",
+        category: "events"
+      },
+      {
+        src: "https://images.unsplash.com/photo-1464366400600-7168b8af9bc3?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=2069&q=80",
+        alt: "Corporate Event",
+        category: "events"
+      },
+      {
+        src: "https://images.unsplash.com/photo-1478146896981-b80fe463b330?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=2070&q=80",
+        alt: "Festival Celebration",
+        category: "events"
+      },
+      {
+        src: "https://images.unsplash.com/photo-1514525253161-7a46d19cd819?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=2070&q=80",
+        alt: "Music Concert",
+        category: "events"
+      },
+      {
+        src: "https://images.unsplash.com/photo-1492684223066-81342ee5ff30?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=2070&q=80",
+        alt: "Evening Event",
+        category: "events"
+      },
+    ],
   };
   
-  const [activeCategory, setActiveCategory] = useState<'resort' | 'realEstate' | 'landscape'>('resort');
+  const [activeCategory, setActiveCategory] = useState<'resort' | 'villasPlots' | 'landscape' | 'multiPurposeHall' | 'amenities' | 'events'>('resort');
   
   const handleImageClick = (src: string) => {
     setSelectedImage(src);
@@ -119,6 +195,25 @@ const Gallery = () => {
     setSelectedImage(null);
     // Re-enable scrolling
     document.body.style.overflow = 'auto';
+  };
+
+  const getCategoryDisplayName = (category: string) => {
+    switch (category) {
+      case 'villasPlots':
+        return 'Villas & Plots';
+      case 'multiPurposeHall':
+        return 'Multi Purpose Hall';
+      case 'amenities':
+        return 'Amenities';
+      case 'events':
+        return 'Events';
+      case 'resort':
+        return 'Resort';
+      case 'landscape':
+        return 'Landscape';
+      default:
+        return category.charAt(0).toUpperCase() + category.slice(1);
+    }
   };
   
   return (
@@ -135,23 +230,23 @@ const Gallery = () => {
           <SectionTitle
             pretitle="Visual Tour"
             title="Experience SVN Bay Parck"
-            subtitle="Browse through our collection of images showcasing our resort, real estate, and scenic landscapes."
+            subtitle="Browse through our collection of images showcasing our resort, real estate, amenities, and events."
           />
           
           {/* Category Tabs */}
           <div className="flex justify-center mb-12">
-            <div className="inline-flex border border-coastal-navy rounded-md overflow-hidden">
-              {['resort', 'realEstate', 'landscape'].map((category) => (
+            <div className="inline-flex flex-wrap border border-coastal-navy rounded-md overflow-hidden">
+              {['resort', 'villasPlots', 'landscape', 'multiPurposeHall', 'amenities', 'events'].map((category) => (
                 <button
                   key={category}
                   onClick={() => setActiveCategory(category as any)}
-                  className={`px-6 py-3 text-sm uppercase tracking-wider font-medium transition-colors ${
+                  className={`px-4 sm:px-6 py-3 text-xs sm:text-sm uppercase tracking-wider font-medium transition-colors ${
                     activeCategory === category
                       ? 'bg-coastal-navy text-white'
                       : 'bg-white text-coastal-navy hover:bg-coastal-mist/20'
                   }`}
                 >
-                  {category === 'realEstate' ? 'Real Estate' : category.charAt(0).toUpperCase() + category.slice(1)}
+                  {getCategoryDisplayName(category)}
                 </button>
               ))}
             </div>
