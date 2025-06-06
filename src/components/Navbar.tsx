@@ -40,13 +40,9 @@ const Navbar = ({ isScrolled }: NavbarProps) => {
   ];
 
   return (
-    <header 
-      className={`fixed w-full z-50 transition-all duration-300 ${
-        isScrolled ? 'bg-white/95 backdrop-blur-sm shadow-sm' : 'bg-transparent'
-      }`}
-    >
+    <header className="fixed w-full z-50 bg-white shadow-[0_2px_10px_rgba(0,0,0,0.05)]">
       <div className="container-luxe">
-        <div className="flex items-center justify-between h-20">
+        <div className="flex items-center justify-between py-4">
           {/* Logo */}
           <Link to="/" className="relative z-10">
             <img 
@@ -79,27 +75,26 @@ const Navbar = ({ isScrolled }: NavbarProps) => {
             </Link>
           </nav>
           
-          {/* Mobile Menu Toggle - Improved visibility and positioning */}
+          {/* Mobile Menu Toggle */}
           <button
             onClick={() => setIsMenuOpen(!isMenuOpen)}
-            className="lg:hidden relative z-10 p-2 rounded-md hover:bg-white/10"
+            className="lg:hidden relative z-10 p-2 rounded-md hover:bg-gray-100 transition-colors duration-200"
             aria-label="Toggle menu"
           >
             {isMenuOpen ? (
-              <X className="h-7 w-7" />
+              <X className="h-7 w-7 text-foreground" />
             ) : (
-              <Menu className="h-7 w-7" />
+              <Menu className="h-7 w-7 text-foreground" />
             )}
           </button>
         </div>
       </div>
       
-      {/* Mobile Navigation - Enhanced with better transitions and styling */}
+      {/* Mobile Navigation */}
       {isMenuOpen && (
         <div 
           className="fixed inset-0 bg-white z-40 lg:hidden animate-fade-in"
           onClick={(e) => {
-            // Close menu when clicking the backdrop (but not menu items)
             if (e.target === e.currentTarget) {
               setIsMenuOpen(false);
             }
@@ -122,7 +117,7 @@ const Navbar = ({ isScrolled }: NavbarProps) => {
               ))}
               <Link
                 to="/contact"
-                className="btn-primary inline-block w-fit text-sm uppercase tracking-widest"
+                className="btn-primary inline-block w-fit text-sm uppercase tracking-widest mt-4"
               >
                 Contact
               </Link>
