@@ -10,33 +10,18 @@ const Gallery = () => {
   const galleryImages = {
     resort: [
       {
-        src: "https://images.unsplash.com/photo-1566073771259-6a8506099945?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=2070&q=80",
-        alt: "Resort Pool",
+        src: "/lovable-uploads/23953c90-818b-41ba-9a12-8c6e68fba81a.png",
+        alt: "Resort Villa Exterior Night View",
         category: "resort"
       },
       {
-        src: "https://images.unsplash.com/photo-1551882547-ff40c63fe5fa?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=2070&q=80",
-        alt: "Resort Pool Loungers",
+        src: "/lovable-uploads/d65da98e-c4e8-41b3-a02c-0bad95f8ddf8.png",
+        alt: "Modern Resort Villa",
         category: "resort"
       },
       {
-        src: "https://images.unsplash.com/photo-1618773928121-c32242e63f39?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=2070&q=80",
-        alt: "Modern Room",
-        category: "resort"
-      },
-      {
-        src: "https://images.unsplash.com/photo-1582719508461-905c673771fd?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=2025&q=80",
-        alt: "Resort Room",
-        category: "resort"
-      },
-      {
-        src: "https://images.unsplash.com/photo-1621275471769-e6aa344546d5?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=2068&q=80",
-        alt: "Resort Bathroom",
-        category: "resort"
-      },
-      {
-        src: "https://images.unsplash.com/photo-1615460549969-36fa19521a4f?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=1974&q=80",
-        alt: "Resort Restaurant",
+        src: "/lovable-uploads/b6b306b4-60b1-4ba3-943f-7ec50142c4c6.png",
+        alt: "Resort Villa with Pool",
         category: "resort"
       },
     ],
