@@ -150,28 +150,18 @@ const Gallery = () => {
     ],
     events: [
       {
-        src: "https://images.unsplash.com/photo-1511578314322-379afb476865?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=2069&q=80",
-        alt: "Wedding Event",
+        src: "/lovable-uploads/79d4d11d-206b-4670-a9a9-12bb8f7be829.png",
+        alt: "Engagement Ceremony Event",
         category: "events"
       },
       {
-        src: "https://images.unsplash.com/photo-1464366400600-7168b8af9bc3?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=2069&q=80",
-        alt: "Corporate Event",
+        src: "/lovable-uploads/e4b7532b-cac4-4889-bcb7-1ef533d92ebf.png",
+        alt: "Traditional Wedding Setup",
         category: "events"
       },
       {
-        src: "https://images.unsplash.com/photo-1478146896981-b80fe463b330?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=2070&q=80",
-        alt: "Festival Celebration",
-        category: "events"
-      },
-      {
-        src: "https://images.unsplash.com/photo-1514525253161-7a46d19cd819?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=2070&q=80",
-        alt: "Music Concert",
-        category: "events"
-      },
-      {
-        src: "https://images.unsplash.com/photo-1492684223066-81342ee5ff30?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=2070&q=80",
-        alt: "Evening Event",
+        src: "/lovable-uploads/d245195c-2465-40e2-af62-aaf99c68904f.png",
+        alt: "Ceremonial Event Hall",
         category: "events"
       },
     ],
