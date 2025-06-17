@@ -1,4 +1,3 @@
-
 import { useState } from 'react';
 import Layout from '../components/Layout';
 import HeroSection from '../components/HeroSection';
@@ -107,23 +106,18 @@ const Gallery = () => {
     ],
     multiPurposeHall: [
       {
-        src: "https://images.unsplash.com/photo-1587825140708-dfaf72ae4b04?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=2070&q=80",
-        alt: "Multi Purpose Hall Main Area",
+        src: "/lovable-uploads/313aaa7c-5ad4-4648-a54f-63cc4d57406b.png",
+        alt: "Multi Purpose Hall Wedding Setup",
         category: "multiPurposeHall"
       },
       {
-        src: "https://images.unsplash.com/photo-1511578314322-379afb476865?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=2069&q=80",
-        alt: "Hall Event Setup",
+        src: "/lovable-uploads/ac79544d-f3ad-4bbd-9478-ed43de5123b5.png",
+        alt: "Multi Purpose Hall Ceremony Setup",
         category: "multiPurposeHall"
       },
       {
-        src: "https://images.unsplash.com/photo-1464366400600-7168b8af9bc3?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=2069&q=80",
-        alt: "Hall Interior Design",
-        category: "multiPurposeHall"
-      },
-      {
-        src: "https://images.unsplash.com/photo-1542744173-8e7e53415bb0?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=2070&q=80",
-        alt: "Hall Stage Area",
+        src: "/lovable-uploads/53aa133d-a1f6-40ad-a5d9-e9d1cca88a91.png",
+        alt: "Multi Purpose Hall Event Space",
         category: "multiPurposeHall"
       },
     ],
