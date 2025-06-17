@@ -123,28 +123,23 @@ const Gallery = () => {
     ],
     amenities: [
       {
-        src: "https://images.unsplash.com/photo-1571019613454-1cb2f99b2d8b?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=2070&q=80",
-        alt: "Fitness Center",
+        src: "/lovable-uploads/e4bf3ceb-513f-4d19-b2ea-75d7f661a57b.png",
+        alt: "Basketball Court",
         category: "amenities"
       },
       {
-        src: "https://images.unsplash.com/photo-1544966503-7cc5ac882d5f?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=2070&q=80",
-        alt: "Spa and Wellness",
+        src: "/lovable-uploads/57b8df75-4f58-4af7-8cd5-da61f86a9cde.png",
+        alt: "Multi-Sport Court",
         category: "amenities"
       },
       {
-        src: "https://images.unsplash.com/photo-1555448248-2571daf6344b?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=2070&q=80",
-        alt: "Swimming Pool Area",
+        src: "/lovable-uploads/8d6110ec-bc34-40ee-8bf8-1598c584e644.png",
+        alt: "Football Court",
         category: "amenities"
       },
       {
-        src: "https://images.unsplash.com/photo-1567013127542-490d757e51fc?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=2070&q=80",
-        alt: "Recreational Facilities",
-        category: "amenities"
-      },
-      {
-        src: "https://images.unsplash.com/photo-1606919820299-e3b00b0dcecc?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=2070&q=80",
-        alt: "Kids Play Area",
+        src: "/lovable-uploads/9c6868e9-1405-45d3-926c-88d863ede679.png",
+        alt: "Beach ATV Adventure",
         category: "amenities"
       },
     ],
