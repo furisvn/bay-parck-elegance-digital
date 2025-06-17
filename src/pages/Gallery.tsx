@@ -10,18 +10,33 @@ const Gallery = () => {
   const galleryImages = {
     resort: [
       {
-        src: "/lovable-uploads/23953c90-818b-41ba-9a12-8c6e68fba81a.png",
+        src: "/lovable-uploads/8aeedb25-c9c8-4946-836e-488836d22339.png",
         alt: "Resort Villa Exterior Night View",
         category: "resort"
       },
       {
-        src: "/lovable-uploads/d65da98e-c4e8-41b3-a02c-0bad95f8ddf8.png",
-        alt: "Modern Resort Villa",
+        src: "/lovable-uploads/a8e6613b-2fc2-455c-a9a8-53105f5d39f7.png",
+        alt: "Modern Resort Villa Design",
         category: "resort"
       },
       {
-        src: "/lovable-uploads/b6b306b4-60b1-4ba3-943f-7ec50142c4c6.png",
+        src: "/lovable-uploads/eb516588-3335-48ba-a53c-92e818d53921.png",
+        alt: "Resort Room Interior",
+        category: "resort"
+      },
+      {
+        src: "/lovable-uploads/d71973ad-24a9-4210-9698-61da55c60a39.png",
         alt: "Resort Villa with Pool",
+        category: "resort"
+      },
+      {
+        src: "/lovable-uploads/7e74da5a-7cce-44f6-adf1-5043d5e90727.png",
+        alt: "Luxury Resort Suite",
+        category: "resort"
+      },
+      {
+        src: "/lovable-uploads/e9af2e4b-7e8a-4a49-841e-6fba69723d3a.png",
+        alt: "Resort Room with Ocean View",
         category: "resort"
       },
     ],
