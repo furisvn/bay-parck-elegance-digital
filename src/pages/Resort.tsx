@@ -158,7 +158,7 @@ const Resort = () => {
             <div className="luxury-card rounded-lg overflow-hidden hover-scale">
               <div className="h-64 overflow-hidden">
                 <img
-                  src="https://images.unsplash.com/photo-1615529182904-14819c35db37?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=2080&q=80"
+                  src="/lovable-uploads/0e672fcd-4a45-4675-b18b-9d2d60613202.png"
                   alt="Amalfi Theme Room"
                   className="w-full h-full object-cover"
                 />
