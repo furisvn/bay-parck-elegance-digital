@@ -1,18 +1,14 @@
-
 import Layout from '../components/Layout';
 import HeroSection from '../components/HeroSection';
 import SectionTitle from '../components/SectionTitle';
 import { ArrowUpRight, MapPin } from 'lucide-react';
 import { useEffect, useState } from 'react';
-
 const Location = () => {
   const [activeSection, setActiveSection] = useState('overview');
-  
   useEffect(() => {
     const handleScroll = () => {
       const sections = ['overview', 'distances', 'nearby', 'map'];
       let current = '';
-      
       for (const section of sections) {
         const element = document.getElementById(section);
         if (element) {
@@ -22,73 +18,69 @@ const Location = () => {
           }
         }
       }
-      
       if (current && current !== activeSection) {
         setActiveSection(current);
       }
     };
-    
     window.addEventListener('scroll', handleScroll);
     return () => {
       window.removeEventListener('scroll', handleScroll);
     };
   }, [activeSection]);
-
-  const distances = [
-    { place: 'Chennai–Kolkata Highway', distance: '10 km' },
-    { place: 'Pydibhimavaram Pharma SEZ', distance: '15 km' },
-    { place: 'Srikakulam City', distance: '30 km' },
-    { place: 'Bhogapuram Intl. Airport', distance: '35 km' },
-    { place: 'Vizianagaram City', distance: '40 km' },
-    { place: 'Visakhapatnam (Vizag)', distance: '80 km' },
-  ];
-
+  const distances = [{
+    place: 'Chennai–Kolkata Highway',
+    distance: '10 km'
+  }, {
+    place: 'Pydibhimavaram Pharma SEZ',
+    distance: '15 km'
+  }, {
+    place: 'Srikakulam City',
+    distance: '30 km'
+  }, {
+    place: 'Bhogapuram Intl. Airport',
+    distance: '35 km'
+  }, {
+    place: 'Vizianagaram City',
+    distance: '40 km'
+  }, {
+    place: 'Visakhapatnam (Vizag)',
+    distance: '80 km'
+  }];
   const handleSectionClick = (section: string) => {
     const element = document.getElementById(section);
     if (element) {
       const headerOffset = 80;
       const elementPosition = element.getBoundingClientRect().top;
       const offsetPosition = elementPosition + window.scrollY - headerOffset;
-      
       window.scrollTo({
         top: offsetPosition,
         behavior: 'smooth'
       });
     }
   };
-  
-  return (
-    <Layout>
-      <HeroSection
-        backgroundUrl="https://images.unsplash.com/photo-1582610116397-edb318620f90?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=2073&q=80"
-        title="Location"
-        subtitle="Strategically positioned for convenience, accessibility, and natural beauty."
-        height="large"
-      />
+  return <Layout>
+      <HeroSection backgroundUrl="https://images.unsplash.com/photo-1582610116397-edb318620f90?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=2073&q=80" title="Location" subtitle="Strategically positioned for convenience, accessibility, and natural beauty." height="large" />
       
       {/* Section Navigation */}
       <div className="sticky top-20 bg-white z-30 border-b border-gray-200">
         <div className="container-luxe">
           <div className="flex overflow-x-auto py-4 scrollbar-hide">
             <div className="flex space-x-6">
-              {[
-                { id: 'overview', label: 'Overview' },
-                { id: 'distances', label: 'Key Distances' },
-                { id: 'nearby', label: 'Nearby Hotspots' },
-                { id: 'map', label: 'Map' },
-              ].map((item) => (
-                <button
-                  key={item.id}
-                  onClick={() => handleSectionClick(item.id)}
-                  className={`whitespace-nowrap px-1 py-2 text-sm font-medium border-b-2 transition-colors ${
-                    activeSection === item.id
-                      ? 'border-coastal-blue text-coastal-blue'
-                      : 'border-transparent text-muted-foreground hover:text-coastal-blue hover:border-coastal-mist'
-                  }`}
-                >
+              {[{
+              id: 'overview',
+              label: 'Overview'
+            }, {
+              id: 'distances',
+              label: 'Key Distances'
+            }, {
+              id: 'nearby',
+              label: 'Nearby Hotspots'
+            }, {
+              id: 'map',
+              label: 'Map'
+            }].map(item => <button key={item.id} onClick={() => handleSectionClick(item.id)} className={`whitespace-nowrap px-1 py-2 text-sm font-medium border-b-2 transition-colors ${activeSection === item.id ? 'border-coastal-blue text-coastal-blue' : 'border-transparent text-muted-foreground hover:text-coastal-blue hover:border-coastal-mist'}`}>
                   {item.label}
-                </button>
-              ))}
+                </button>)}
             </div>
           </div>
         </div>
@@ -127,11 +119,7 @@ const Location = () => {
             </div>
             
             <div className="rounded-lg overflow-hidden h-[500px]">
-              <img
-                src="https://images.unsplash.com/photo-1629371997433-d11e6161a3a7?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=2071&q=80"
-                alt="Aerial view of location"
-                className="w-full h-full object-cover"
-              />
+              <img alt="Aerial view of location" src="/lovable-uploads/7bfb9ed6-bb2b-42fd-9ea4-cb2e08426f70.jpg" className="w-full h-full object-contain" />
             </div>
           </div>
         </div>
@@ -140,15 +128,10 @@ const Location = () => {
       {/* Distances Section */}
       <section id="distances" className="section-padding bg-coastal-ivory/30">
         <div className="container-luxe">
-          <SectionTitle
-            pretitle="Connectivity"
-            title="Key Distances"
-            subtitle="SVN Bay Parck enjoys excellent connectivity to major landmarks and transportation hubs."
-          />
+          <SectionTitle pretitle="Connectivity" title="Key Distances" subtitle="SVN Bay Parck enjoys excellent connectivity to major landmarks and transportation hubs." />
           
           <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-8">
-            {distances.map((item, index) => (
-              <div key={index} className="luxury-card rounded-md flex items-center justify-between">
+            {distances.map((item, index) => <div key={index} className="luxury-card rounded-md flex items-center justify-between">
                 <div>
                   <h3 className="text-xl mb-1">{item.place}</h3>
                   <p className="text-muted-foreground">{item.distance}</p>
@@ -156,8 +139,7 @@ const Location = () => {
                 <div className="bg-coastal-mist/20 h-16 w-16 flex items-center justify-center rounded-full">
                   <span className="text-lg font-medium">{item.distance}</span>
                 </div>
-              </div>
-            ))}
+              </div>)}
           </div>
           
           <div className="mt-12 bg-white p-8 rounded-lg shadow-sm">
@@ -194,40 +176,30 @@ const Location = () => {
       {/* Nearby Hotspots */}
       <section id="nearby" className="section-padding">
         <div className="container-luxe">
-          <SectionTitle
-            pretitle="Neighborhood"
-            title="Nearby Hotspots"
-            subtitle="Discover the attractions and conveniences surrounding SVN Bay Parck."
-          />
+          <SectionTitle pretitle="Neighborhood" title="Nearby Hotspots" subtitle="Discover the attractions and conveniences surrounding SVN Bay Parck." />
           
           <div className="grid grid-cols-1 md:grid-cols-2 gap-8">
             <div className="bg-white p-8 rounded-lg shadow-sm">
               <h3 className="text-2xl mb-6">Points of Interest</h3>
               
               <ul className="space-y-6">
-                {[
-                  {
-                    name: 'Natavalasa Junction',
-                    description: 'Commercial hub with essential services and shopping options.',
-                    distance: '15 km'
-                  },
-                  {
-                    name: 'Ranastalam',
-                    description: 'Historic town with cultural significance and local markets.',
-                    distance: '20 km'
-                  },
-                  {
-                    name: 'Oakridge International School',
-                    description: 'Premier educational institution offering world-class education.',
-                    distance: '45 km'
-                  },
-                  {
-                    name: 'Simhachalam Temple',
-                    description: 'Ancient Hindu temple dedicated to Lord Narasimha, a popular pilgrimage site.',
-                    distance: '70 km'
-                  },
-                ].map((item, index) => (
-                  <li key={index} className="flex items-start">
+                {[{
+                name: 'Natavalasa Junction',
+                description: 'Commercial hub with essential services and shopping options.',
+                distance: '15 km'
+              }, {
+                name: 'Ranastalam',
+                description: 'Historic town with cultural significance and local markets.',
+                distance: '20 km'
+              }, {
+                name: 'Oakridge International School',
+                description: 'Premier educational institution offering world-class education.',
+                distance: '45 km'
+              }, {
+                name: 'Simhachalam Temple',
+                description: 'Ancient Hindu temple dedicated to Lord Narasimha, a popular pilgrimage site.',
+                distance: '70 km'
+              }].map((item, index) => <li key={index} className="flex items-start">
                     <MapPin className="h-5 w-5 mr-3 mt-1 text-coastal-blue" />
                     <div>
                       <div className="flex items-center justify-between">
@@ -236,8 +208,7 @@ const Location = () => {
                       </div>
                       <p className="text-muted-foreground text-sm">{item.description}</p>
                     </div>
-                  </li>
-                ))}
+                  </li>)}
               </ul>
             </div>
             
@@ -245,29 +216,23 @@ const Location = () => {
               <h3 className="text-2xl mb-6">Cities & Towns</h3>
               
               <ul className="space-y-6">
-                {[
-                  {
-                    name: 'Srikakulam',
-                    description: 'District headquarters with hospitals, educational institutions, and shopping centers.',
-                    distance: '30 km'
-                  },
-                  {
-                    name: 'Vizianagaram',
-                    description: 'Historic city known for its fort, palace, and cultural heritage.',
-                    distance: '40 km'
-                  },
-                  {
-                    name: 'Visakhapatnam (Vizag)',
-                    description: 'Major port city with international airport, beaches, and metropolitan amenities.',
-                    distance: '80 km'
-                  },
-                  {
-                    name: 'Bheemili',
-                    description: 'Coastal town with Dutch colonial history and beautiful beaches.',
-                    distance: '65 km'
-                  },
-                ].map((item, index) => (
-                  <li key={index} className="flex items-start">
+                {[{
+                name: 'Srikakulam',
+                description: 'District headquarters with hospitals, educational institutions, and shopping centers.',
+                distance: '30 km'
+              }, {
+                name: 'Vizianagaram',
+                description: 'Historic city known for its fort, palace, and cultural heritage.',
+                distance: '40 km'
+              }, {
+                name: 'Visakhapatnam (Vizag)',
+                description: 'Major port city with international airport, beaches, and metropolitan amenities.',
+                distance: '80 km'
+              }, {
+                name: 'Bheemili',
+                description: 'Coastal town with Dutch colonial history and beautiful beaches.',
+                distance: '65 km'
+              }].map((item, index) => <li key={index} className="flex items-start">
                     <MapPin className="h-5 w-5 mr-3 mt-1 text-coastal-blue" />
                     <div>
                       <div className="flex items-center justify-between">
@@ -276,8 +241,7 @@ const Location = () => {
                       </div>
                       <p className="text-muted-foreground text-sm">{item.description}</p>
                     </div>
-                  </li>
-                ))}
+                  </li>)}
               </ul>
             </div>
           </div>
@@ -310,11 +274,7 @@ const Location = () => {
                   </ul>
                 </div>
                 <div className="rounded-lg overflow-hidden h-[300px]">
-                  <img 
-                    src="https://images.unsplash.com/photo-1499793983690-e29da59ef1c2?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=2070&q=80"
-                    alt="Coastal landscape"
-                    className="w-full h-full object-cover"
-                  />
+                  <img src="https://images.unsplash.com/photo-1499793983690-e29da59ef1c2?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=2070&q=80" alt="Coastal landscape" className="w-full h-full object-cover" />
                 </div>
               </div>
             </div>
@@ -325,11 +285,7 @@ const Location = () => {
       {/* Map Section */}
       <section id="map" className="section-padding bg-coastal-ivory/30">
         <div className="container-luxe">
-          <SectionTitle
-            pretitle="Interactive Map"
-            title="Find Your Way to Paradise"
-            subtitle="Explore the exact location of SVN Bay Parck and plan your visit."
-          />
+          <SectionTitle pretitle="Interactive Map" title="Find Your Way to Paradise" subtitle="Explore the exact location of SVN Bay Parck and plan your visit." />
           
           <div className="bg-white p-4 rounded-lg shadow-sm">
             <div className="aspect-[16/9] w-full">
@@ -383,8 +339,6 @@ const Location = () => {
           </div>
         </div>
       </section>
-    </Layout>
-  );
+    </Layout>;
 };
-
 export default Location;
