@@ -1,19 +1,12 @@
-
 import { Link } from 'react-router-dom';
-
 const Footer = () => {
-  return (
-    <footer className="bg-coastal-navy text-white py-12 md:py-16">
+  return <footer className="bg-coastal-navy text-white py-12 md:py-16">
       <div className="container-luxe">
         <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-8">
           {/* Logo & Info */}
           <div className="space-y-4">
             <Link to="/">
-              <img 
-                src="/lovable-uploads/d8698e8d-c7f9-454e-9a42-acc17d508ccd.png" 
-                alt="SVN Bay Parck Logo" 
-                className="h-12 mb-4 invert"
-              />
+              <img alt="SVN Bay Parck Logo" src="/lovable-uploads/5a0b2397-c6f7-42d7-89b8-85ce634e0e51.png" className="h-12 mb-4  object-fill" />
             </Link>
             <p className="text-sm text-coastal-ivory/80">
               Discover a rare fusion of CRZ-compliant premium plots, signature sea-facing villas, and an exclusive boutique resort — all in one gated estate.
@@ -36,16 +29,11 @@ const Footer = () => {
           <div>
             <h3 className="text-xl font-medium mb-4">Quick Links</h3>
             <ul className="space-y-2">
-              {['Home', 'About', 'Real Estate', 'Resort', 'Gallery', 'Location', 'Blog', 'Contact'].map((item) => (
-                <li key={item}>
-                  <Link 
-                    to={item === 'Home' ? '/' : `/${item.toLowerCase().replace(' ', '-')}`}
-                    className="text-coastal-ivory/80 hover:text-white hover:underline transition-colors"
-                  >
+              {['Home', 'About', 'Real Estate', 'Resort', 'Gallery', 'Location', 'Blog', 'Contact'].map(item => <li key={item}>
+                  <Link to={item === 'Home' ? '/' : `/${item.toLowerCase().replace(' ', '-')}`} className="text-coastal-ivory/80 hover:text-white hover:underline transition-colors">
                     {item}
                   </Link>
-                </li>
-              ))}
+                </li>)}
             </ul>
           </div>
           
@@ -77,8 +65,6 @@ const Footer = () => {
           <p>&copy; {new Date().getFullYear()} SVN Bay Parck. All rights reserved.</p>
         </div>
       </div>
-    </footer>
-  );
+    </footer>;
 };
-
 export default Footer;
