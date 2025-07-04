@@ -1,3 +1,4 @@
+
 import { useState } from 'react';
 import Layout from '../components/Layout';
 import HeroSection from '../components/HeroSection';
@@ -38,70 +39,6 @@ const Gallery = () => {
         src: "/lovable-uploads/e9af2e4b-7e8a-4a49-841e-6fba69723d3a.png",
         alt: "Resort Room with Ocean View",
         category: "resort"
-      },
-    ],
-    villasPlots: [
-      {
-        src: "https://images.unsplash.com/photo-1600585154340-be6161a56a0c?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=2070&q=80",
-        alt: "Luxury Villa Exterior",
-        category: "villasPlots"
-      },
-      {
-        src: "https://images.unsplash.com/photo-1600607686527-6fb886090705?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=2070&q=80",
-        alt: "Villa Garden",
-        category: "villasPlots"
-      },
-      {
-        src: "https://images.unsplash.com/photo-1512917774080-9991f1c4c750?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=2070&q=80",
-        alt: "Villa Exterior",
-        category: "villasPlots"
-      },
-      {
-        src: "https://images.unsplash.com/photo-1613977257363-707ba9348227?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=2070&q=80",
-        alt: "Villa Living Room",
-        category: "villasPlots"
-      },
-      {
-        src: "https://images.unsplash.com/photo-1599427303058-f04cbcf4756f?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=2071&q=80",
-        alt: "Villa Bedroom",
-        category: "villasPlots"
-      },
-      {
-        src: "https://images.unsplash.com/photo-1600607687920-4e2a09cf159d?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=2070&q=80",
-        alt: "Villa Dining",
-        category: "villasPlots"
-      },
-    ],
-    landscape: [
-      {
-        src: "https://images.unsplash.com/photo-1499793983690-e29da59ef1c2?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=2070&q=80",
-        alt: "Beach Landscape",
-        category: "landscape"
-      },
-      {
-        src: "https://images.unsplash.com/photo-1519046904884-53103b34b206?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=2070&q=80",
-        alt: "Sunset View",
-        category: "landscape"
-      },
-      {
-        src: "https://images.unsplash.com/photo-1507525428034-b723cf961d3e?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=2073&q=80",
-        alt: "Beachfront",
-        category: "landscape"
-      },
-      {
-        src: "https://images.unsplash.com/photo-1590523741831-ab7e8b8f9c7f?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=2074&q=80",
-        alt: "Coconut Grove",
-        category: "landscape"
-      },
-      {
-        src: "https://images.unsplash.com/photo-1582610116397-edb318620f90?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=2073&q=80",
-        alt: "Aerial View",
-        category: "landscape"
-      },
-      {
-        src: "https://images.unsplash.com/photo-1437719417032-8595fd9e9dc6?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=2074&q=80",
-        alt: "Coastline",
-        category: "landscape"
       },
     ],
     multiPurposeHall: [
@@ -162,7 +99,7 @@ const Gallery = () => {
     ],
   };
   
-  const [activeCategory, setActiveCategory] = useState<'resort' | 'villasPlots' | 'landscape' | 'multiPurposeHall' | 'amenities' | 'events'>('resort');
+  const [activeCategory, setActiveCategory] = useState<'resort' | 'multiPurposeHall' | 'amenities' | 'events'>('resort');
   
   const handleImageClick = (src: string) => {
     setSelectedImage(src);
@@ -178,8 +115,6 @@ const Gallery = () => {
 
   const getCategoryDisplayName = (category: string) => {
     switch (category) {
-      case 'villasPlots':
-        return 'Villas & Plots';
       case 'multiPurposeHall':
         return 'Multi Purpose Hall';
       case 'amenities':
@@ -188,8 +123,6 @@ const Gallery = () => {
         return 'Events';
       case 'resort':
         return 'Resort';
-      case 'landscape':
-        return 'Landscape';
       default:
         return category.charAt(0).toUpperCase() + category.slice(1);
     }
@@ -215,7 +148,7 @@ const Gallery = () => {
           {/* Category Tabs */}
           <div className="flex justify-center mb-12">
             <div className="inline-flex flex-wrap border border-coastal-navy rounded-md overflow-hidden">
-              {['resort', 'villasPlots', 'landscape', 'multiPurposeHall', 'amenities', 'events'].map((category) => (
+              {['resort', 'multiPurposeHall', 'amenities', 'events'].map((category) => (
                 <button
                   key={category}
                   onClick={() => setActiveCategory(category as any)}

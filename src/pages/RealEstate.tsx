@@ -1,8 +1,7 @@
-
 import Layout from '../components/Layout';
 import HeroSection from '../components/HeroSection';
 import SectionTitle from '../components/SectionTitle';
-import { Check, Home, Map } from 'lucide-react';
+import { Check, Home } from 'lucide-react';
 import ImageReveal from '../components/ImageReveal';
 import { Link } from 'react-router-dom';
 
@@ -95,59 +94,8 @@ const RealEstate = () => {
         </div>
       </section>
       
-      {/* Layout Map */}
-      <section className="section-padding bg-coastal-ivory/30">
-        <div className="container-luxe">
-          <SectionTitle
-            pretitle="Project Layout"
-            title="Interactive Layout Map"
-            subtitle="Explore our meticulously designed project layout and find your ideal plot."
-          />
-          
-          <div className="bg-white p-6 md:p-8 rounded-lg shadow-sm">
-            <div className="flex items-center justify-center mb-8">
-              <Map className="h-8 w-8 mr-4 text-coastal-blue" />
-              <h3 className="text-2xl">Bay Parck Master Plan</h3>
-            </div>
-            
-            <div className="relative aspect-video w-full bg-coastal-mist/20 rounded-lg flex items-center justify-center">
-              {/* This would be replaced with an actual interactive map */}
-              <div className="text-center p-8">
-                <p className="text-lg mb-4">Interactive Plot Map</p>
-                <p className="text-muted-foreground mb-6">
-                  Click on a plot to view its details, availability, and pricing.
-                </p>
-                <a href="#" className="btn-primary">View Full Map</a>
-              </div>
-            </div>
-            
-            <div className="mt-8 p-4 bg-coastal-mist/10 rounded-lg">
-              <h4 className="font-medium mb-2">Plot Availability Legend:</h4>
-              <div className="grid grid-cols-2 sm:grid-cols-4 gap-4">
-                <div className="flex items-center">
-                  <div className="w-4 h-4 bg-green-500 rounded-full mr-2"></div>
-                  <span className="text-sm">Available</span>
-                </div>
-                <div className="flex items-center">
-                  <div className="w-4 h-4 bg-red-500 rounded-full mr-2"></div>
-                  <span className="text-sm">Sold</span>
-                </div>
-                <div className="flex items-center">
-                  <div className="w-4 h-4 bg-yellow-500 rounded-full mr-2"></div>
-                  <span className="text-sm">Reserved</span>
-                </div>
-                <div className="flex items-center">
-                  <div className="w-4 h-4 bg-blue-500 rounded-full mr-2"></div>
-                  <span className="text-sm">Premium</span>
-                </div>
-              </div>
-            </div>
-          </div>
-        </div>
-      </section>
-      
       {/* Villas Section */}
-      <section id="villas" className="section-padding">
+      <section id="villas" className="section-padding bg-coastal-ivory/30">
         <div className="container-luxe">
           <SectionTitle
             pretitle="Luxury Villas"
@@ -260,7 +208,7 @@ const RealEstate = () => {
       </section>
       
       {/* Investment Value */}
-      <section className="section-padding bg-coastal-ivory/30">
+      <section className="section-padding">
         <div className="container-luxe">
           <SectionTitle
             pretitle="Investment Value"
@@ -340,7 +288,7 @@ const RealEstate = () => {
       </section>
       
       {/* Current Offers */}
-      <section className="section-padding">
+      <section className="section-padding bg-coastal-ivory/30">
         <div className="container-luxe">
           <SectionTitle
             pretitle="Limited Time"
