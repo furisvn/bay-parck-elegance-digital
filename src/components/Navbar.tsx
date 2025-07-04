@@ -48,7 +48,7 @@ const Navbar = ({ isScrolled }: NavbarProps) => {
             <img 
               src="/lovable-uploads/d8698e8d-c7f9-454e-9a42-acc17d508ccd.png" 
               alt="SVN Bay Parck Logo" 
-              className="h-12 md:h-14"
+              className="h-16 md:h-20 lg:h-24"
             />
           </Link>
           
