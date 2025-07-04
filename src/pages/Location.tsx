@@ -3,8 +3,10 @@ import HeroSection from '../components/HeroSection';
 import SectionTitle from '../components/SectionTitle';
 import { ArrowUpRight, MapPin } from 'lucide-react';
 import { useEffect, useState } from 'react';
+
 const Location = () => {
   const [activeSection, setActiveSection] = useState('overview');
+
   useEffect(() => {
     const handleScroll = () => {
       const sections = ['overview', 'distances', 'nearby', 'map'];
@@ -27,6 +29,7 @@ const Location = () => {
       window.removeEventListener('scroll', handleScroll);
     };
   }, [activeSection]);
+
   const distances = [{
     place: 'Chennai–Kolkata Highway',
     distance: '10 km'
@@ -46,6 +49,7 @@ const Location = () => {
     place: 'Visakhapatnam (Vizag)',
     distance: '80 km'
   }];
+
   const handleSectionClick = (section: string) => {
     const element = document.getElementById(section);
     if (element) {
@@ -58,6 +62,7 @@ const Location = () => {
       });
     }
   };
+
   return <Layout>
       <HeroSection backgroundUrl="https://images.unsplash.com/photo-1582610116397-edb318620f90?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=2073&q=80" title="Location" subtitle="Strategically positioned for convenience, accessibility, and natural beauty." height="large" />
       
@@ -285,26 +290,27 @@ const Location = () => {
       {/* Map Section */}
       <section id="map" className="section-padding bg-coastal-ivory/30">
         <div className="container-luxe">
-          <SectionTitle pretitle="Interactive Map" title="Find Your Way to Paradise" subtitle="Explore the exact location of SVN Bay Parck and plan your visit." />
+          <SectionTitle
+            pretitle="Interactive Map"
+            title="Find Your Way to Paradise"
+            subtitle="Explore the exact location of SVN Bay Parck and plan your visit."
+          />
           
           <div className="bg-white p-4 rounded-lg shadow-sm">
-            <div className="aspect-[16/9] w-full">
-              {/* This would typically be a Google Maps embed - showing placeholder for this example */}
-              <div className="w-full h-full bg-coastal-mist/20 rounded flex items-center justify-center">
-                <div className="text-center p-8">
-                  <MapPin className="h-12 w-12 text-coastal-blue mx-auto mb-4" />
-                  <h3 className="text-2xl mb-4">Interactive Map</h3>
-                  <p className="text-muted-foreground mb-6">
-                    Google Maps integration would be enabled here on the live site.
-                  </p>
-                  <p className="text-sm">
-                    Koshta Junction, Jeerupalem, Srikakulam District, Andhra Pradesh, India
-                  </p>
-                </div>
-              </div>
+            <div className="aspect-[16/9] w-full mb-8">
+              <iframe 
+                src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3791.5078040655417!2d83.7581077!3d18.140506799999997!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x3a3c0f0027cff3bb%3A0xeabdd61628bb3c6!2sSVN%20Bay%20Parck!5e0!3m2!1sen!2sin!4v1751623516940!5m2!1sen!2sin" 
+                width="100%" 
+                height="450" 
+                style={{border: 0, borderRadius: '12px'}} 
+                allowFullScreen 
+                loading="lazy" 
+                referrerPolicy="no-referrer-when-downgrade"
+                title="SVN Bay Parck Location"
+              />
             </div>
             
-            <div className="mt-8 p-6">
+            <div className="p-6">
               <h3 className="text-2xl mb-6">Directions</h3>
               <div className="grid grid-cols-1 md:grid-cols-2 gap-8">
                 <div>
@@ -341,4 +347,5 @@ const Location = () => {
       </section>
     </Layout>;
 };
+
 export default Location;

@@ -1,4 +1,3 @@
-
 import { useEffect } from 'react';
 import Layout from '../components/Layout';
 import HeroSection from '../components/HeroSection';
@@ -144,18 +143,16 @@ const Contact = () => {
 
           <div className="bg-white rounded-lg shadow-sm overflow-hidden">
             <div className="aspect-[16/9] w-full">
-              {/* This would typically be a Google Maps embed */}
-              <div className="w-full h-full bg-coastal-mist/20 flex items-center justify-center">
-                <div className="text-center p-8">
-                  <MapPin className="h-12 w-12 text-coastal-blue mx-auto mb-4" />
-                  <h3 className="text-2xl mb-4">Visit SVN Bay Parck</h3>
-                  <address className="not-italic mb-6">
-                    Koshta Junction, Jeerupalem,<br />
-                    Srikakulam District, Andhra Pradesh, India
-                  </address>
-                  <button className="btn-primary">Get Directions</button>
-                </div>
-              </div>
+              <iframe 
+                src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3791.5078040655417!2d83.7581077!3d18.140506799999997!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x3a3c0f0027cff3bb%3A0xeabdd61628bb3c6!2sSVN%20Bay%20Parck!5e0!3m2!1sen!2sin!4v1751623516940!5m2!1sen!2sin" 
+                width="100%" 
+                height="450" 
+                style={{border: 0, borderRadius: '12px'}} 
+                allowFullScreen 
+                loading="lazy" 
+                referrerPolicy="no-referrer-when-downgrade"
+                title="SVN Bay Parck Location"
+              />
             </div>
           </div>
         </div>
