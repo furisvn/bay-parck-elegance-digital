@@ -49,6 +49,22 @@ const Layout = ({ children }: PropsWithChildren) => {
     };
   }, []);
 
+  // Load SnapWidget script
+  useEffect(() => {
+    const script = document.createElement('script');
+    script.src = 'https://snapwidget.com/js/snapwidget.js';
+    script.async = true;
+    document.head.appendChild(script);
+
+    return () => {
+      // Clean up script when component unmounts
+      const existingScript = document.querySelector('script[src="https://snapwidget.com/js/snapwidget.js"]');
+      if (existingScript) {
+        document.head.removeChild(existingScript);
+      }
+    };
+  }, []);
+
   return (
     <div className="flex min-h-screen flex-col">
       <Navbar isScrolled={isScrolled} />
@@ -63,11 +79,13 @@ const Layout = ({ children }: PropsWithChildren) => {
           <div className="max-w-4xl mx-auto">
             <div className="bg-white rounded-xl shadow-sm overflow-hidden">
               <iframe 
-                src="https://cdn.lightwidget.com/widgets/YOUR_WIDGET_ID.html" 
-                scrolling="no" 
+                src="https://snapwidget.com/embed/1104091"
+                className="snapwidget-widget w-full border-0"
                 allowTransparency={true}
-                className="lightwidget-widget w-full border-0" 
-                style={{ minHeight: '400px', overflow: 'hidden' }}
+                frameBorder="0"
+                scrolling="no"
+                style={{ border: 'none', overflow: 'hidden', width: '100%', minHeight: '400px' }}
+                title="Posts from Instagram"
               />
             </div>
             <p className="text-center mt-6">
