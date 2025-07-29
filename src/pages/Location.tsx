@@ -358,33 +358,20 @@ const Location = () => {
             subtitle="Get directions to SVN Bay Parck from your location and plan your visit with ease."
           />
           
-          <div className="bg-white p-6 rounded-xl shadow-sm">
-            <div className="mb-6">
-              <h3 className="text-2xl mb-4 text-coastal-navy">Get Directions</h3>
-              <p className="text-muted-foreground">
-                Use the interactive map below to get turn-by-turn directions from your location to SVN Bay Parck.
-                Simply enter your starting point in the search box to plan your route.
-              </p>
-            </div>
+          <div className="bg-white p-8 rounded-xl shadow-sm text-center">
+            <h3 className="text-2xl mb-4 text-coastal-navy">Get Directions</h3>
+            <p className="text-muted-foreground mb-8">
+              Open Google Maps and get step-by-step directions from your location to SVN Bay Parck with a single click.
+            </p>
             
-            <div className="rounded-lg overflow-hidden">
-              <iframe
-                width="100%"
-                height="450"
-                style={{ border: 0 }}
-                loading="lazy"
-                allowFullScreen
-                referrerPolicy="no-referrer-when-downgrade"
-                src="https://www.google.com/maps/embed/v1/directions?key=YOUR_API_KEY&destination=SVN+Bay+Parck+Koshta+Junction"
-                title="Trip Planner - Get Directions to SVN Bay Parck"
-              />
-            </div>
-            
-            <div className="mt-6 p-4 bg-coastal-ivory/30 rounded-lg">
-              <p className="text-sm text-muted-foreground text-center">
-                💡 <strong>Tip:</strong> For the best experience, we recommend using the native Google Maps app on your mobile device for real-time navigation and traffic updates.
-              </p>
-            </div>
+            <a 
+              href="https://www.google.com/maps/dir/?api=1&destination=SVN+Bay+Parck,+Koshta+Junction,+Srikakulam,+Andhra+Pradesh"
+              target="_blank"
+              rel="noopener noreferrer"
+              className="inline-flex items-center justify-center px-8 py-4 text-lg font-medium text-white bg-gradient-to-r from-coastal-blue to-coastal-mist rounded-lg hover:from-coastal-blue/90 hover:to-coastal-mist/90 transition-all duration-300 transform hover:scale-105 shadow-lg hover:shadow-xl"
+            >
+              Open in Google Maps
+            </a>
           </div>
         </div>
       </section>
