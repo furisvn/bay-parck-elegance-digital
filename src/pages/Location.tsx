@@ -8,8 +8,8 @@ const Location = () => {
   const [activeSection, setActiveSection] = useState('overview');
 
   useEffect(() => {
-    const handleScroll = () => {
-      const sections = ['overview', 'distances', 'nearby', 'map'];
+  const handleScroll = () => {
+      const sections = ['overview', 'distances', 'nearby', 'map', 'planner'];
       let current = '';
       for (const section of sections) {
         const element = document.getElementById(section);
@@ -83,6 +83,9 @@ const Location = () => {
             }, {
               id: 'map',
               label: 'Map'
+            }, {
+              id: 'planner',
+              label: 'Trip Planner'
             }].map(item => <button key={item.id} onClick={() => handleSectionClick(item.id)} className={`whitespace-nowrap px-1 py-2 text-sm font-medium border-b-2 transition-colors ${activeSection === item.id ? 'border-coastal-blue text-coastal-blue' : 'border-transparent text-muted-foreground hover:text-coastal-blue hover:border-coastal-mist'}`}>
                   {item.label}
                 </button>)}
@@ -341,6 +344,46 @@ const Location = () => {
                   Contact for Assistance
                 </a>
               </div>
+            </div>
+          </div>
+        </div>
+      </section>
+      
+      {/* Trip Planner Section */}
+      <section id="planner" className="section-padding">
+        <div className="container-luxe">
+          <SectionTitle
+            pretitle="Plan Your Journey"
+            title="Trip Planner"
+            subtitle="Get directions to SVN Bay Parck from your location and plan your visit with ease."
+          />
+          
+          <div className="bg-white p-6 rounded-xl shadow-sm">
+            <div className="mb-6">
+              <h3 className="text-2xl mb-4 text-coastal-navy">Get Directions</h3>
+              <p className="text-muted-foreground">
+                Use the interactive map below to get turn-by-turn directions from your location to SVN Bay Parck.
+                Simply enter your starting point in the search box to plan your route.
+              </p>
+            </div>
+            
+            <div className="rounded-lg overflow-hidden">
+              <iframe
+                width="100%"
+                height="450"
+                style={{ border: 0 }}
+                loading="lazy"
+                allowFullScreen
+                referrerPolicy="no-referrer-when-downgrade"
+                src="https://www.google.com/maps/embed/v1/directions?key=YOUR_API_KEY&destination=SVN+Bay+Parck+Koshta+Junction"
+                title="Trip Planner - Get Directions to SVN Bay Parck"
+              />
+            </div>
+            
+            <div className="mt-6 p-4 bg-coastal-ivory/30 rounded-lg">
+              <p className="text-sm text-muted-foreground text-center">
+                💡 <strong>Tip:</strong> For the best experience, we recommend using the native Google Maps app on your mobile device for real-time navigation and traffic updates.
+              </p>
             </div>
           </div>
         </div>
