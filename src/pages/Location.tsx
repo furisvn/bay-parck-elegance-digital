@@ -1,6 +1,7 @@
 import Layout from '../components/Layout';
 import HeroSection from '../components/HeroSection';
 import SectionTitle from '../components/SectionTitle';
+import TreasureHunt from '../components/TreasureHunt';
 import { ArrowUpRight, MapPin } from 'lucide-react';
 import { useEffect, useState } from 'react';
 
@@ -373,6 +374,19 @@ const Location = () => {
               Open in Google Maps
             </a>
           </div>
+        </div>
+      </section>
+
+      {/* Treasure Hunt Section */}
+      <section id="treasure-hunt" className="section-padding bg-coastal-ivory/30">
+        <div className="container-luxe">
+          <SectionTitle
+            pretitle="Interactive Experience"
+            title="🏝️ SVN Treasure Hunt"
+            subtitle="Tap around our coastal map and uncover hidden treasures. Can you find them all?"
+          />
+          
+          <TreasureHunt />
         </div>
       </section>
     </Layout>;
