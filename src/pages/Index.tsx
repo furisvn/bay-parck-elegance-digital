@@ -87,7 +87,7 @@ const Index = () => {
             <ContentBlock
               title="Beachfront Real Estate"
               content="SVN Bay Parck offers 206 meticulously planned freehold plots ranging from 200-267 sq yds. Each plot features clear demarcation, 60ft & 40ft BT internal roads, underground electrical lines, drainage systems, avenue plantation, and comprehensive utilities infrastructure. Investment opportunities include potential for high ROI, strong resale value, and flexible payment plans."
-              image="/lovable-uploads/a32a9ffa-3e46-448b-861f-4d28e6e64a31.png"
+              image="https://images.unsplash.com/photo-1506744038136-46273834b3fb?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=1200&h=800&q=80"
               imageAlt="SVN Bay Parck Residential Plots View"
               ctaText="Explore Real Estate"
               ctaLink="/real-estate"
