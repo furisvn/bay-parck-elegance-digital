@@ -36,7 +36,7 @@ const About = () => {
 
             <div className="grid grid-cols-2 gap-4">
               <ImageReveal
-                src="https://images.unsplash.com/photo-1582610116397-edb318620f90?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=2073&q=80"
+                src="/lovable-uploads/eb516588-3335-48ba-a53c-92e818d53921.png"
                 alt="Coastal view"
                 height="h-80"
                 className="rounded-lg"
