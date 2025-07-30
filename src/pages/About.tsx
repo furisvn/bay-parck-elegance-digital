@@ -42,7 +42,7 @@ const About = () => {
                 className="rounded-lg"
               />
               <ImageReveal
-                src="/lovable-uploads/4ad74c91-765b-48f9-a99a-e75964bbc089.png"
+                src="/lovable-uploads/f136fc02-897a-4f58-a2e9-0cda29f4c6b0.png"
                 alt="Luxury resort"
                 height="h-80"
                 className="rounded-lg mt-8"
