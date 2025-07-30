@@ -220,7 +220,7 @@ const RealEstate = () => {
             <div>
               <div className="aspect-square overflow-hidden rounded-lg">
                 <img
-                  src="https://images.unsplash.com/photo-1524813686514-a57563d77965?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=2076&q=80"
+                  src="/lovable-uploads/fd776e3d-38e8-466e-a9a4-1b4683d83469.png"
                   alt="Investment Value"
                   className="w-full h-full object-cover"
                 />
