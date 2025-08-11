@@ -205,7 +205,7 @@ const Resort = () => {
               {
                 title: "Swimming Pool",
                 description: "A stunning infinity pool with panoramic views of the coastline, perfect for relaxation and leisure.",
-                image: "https://images.unsplash.com/photo-1551882547-ff40c63fe5fa?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=2070&q=80"
+                image: "/lovable-uploads/67e8c853-485f-4939-a48f-5cc1c6eeefa7.png"
               },
               {
                 title: "Restaurant & Entertainment",
