@@ -215,7 +215,7 @@ const Resort = () => {
               {
                 title: "Banquet & Event Spaces",
                 description: "Elegant venues for private events, celebrations, and corporate gatherings with scenic backdrops.",
-                image: "https://images.unsplash.com/photo-1519167758481-83f550bb49b3?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=2098&q=80"
+                image: "/lovable-uploads/174e63bb-8f60-4a56-b921-fdf399657608.png"
               },
               {
                 title: "Fitness Center",
