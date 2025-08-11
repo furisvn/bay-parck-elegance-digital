@@ -225,7 +225,7 @@ const Resort = () => {
               {
                 title: "Recreation & Sports",
                 description: "Multiple options including cricket pitch, badminton, basketball, and dedicated children's play areas.",
-                image: "https://images.unsplash.com/photo-1526307616774-60d0098f7854?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=2071&q=80"
+                image: "/lovable-uploads/b767d7f3-5f50-4ecc-909d-fa6bcabdfe92.png"
               },
             ].map((amenity, index) => (
               <div key={index} className="rounded-lg overflow-hidden bg-white shadow-sm hover:shadow-md transition-shadow duration-300">
