@@ -283,7 +283,7 @@ const Location = () => {
                   </ul>
                 </div>
                 <div className="rounded-lg overflow-hidden h-[300px]">
-                  <img src="https://images.unsplash.com/photo-1499793983690-e29da59ef1c2?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=2070&q=80" alt="Coastal landscape" className="w-full h-full object-cover" />
+                  <img src="/lovable-uploads/9e996b5b-12f7-4ef9-89dd-189d5dcf6ba5.png" alt="Beach cabana with white curtains overlooking the ocean" className="w-full h-full object-cover" />
                 </div>
               </div>
             </div>
